@@ -1,0 +1,81 @@
+@import '../../../styles/const.scss';
+
+.container {
+    width: 360px;
+    background-color: transparent;
+    border: none;
+    flex: 0 0 auto;
+
+    @media screen and (max-width: 768px) {
+        width: initial;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        gap: 10px;
+        cursor: pointer;
+        color: $white;
+        background-color: $buttonColor;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+
+        &:hover {
+            background-color: $buttonActiveColor;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex: 0 0 auto;
+            padding: 10px 20px;
+            align-items: center;
+        }
+    }
+
+    .image {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        padding-left: 5px;
+    }
+
+    .title {
+        font-size: 16px;
+        color: $white;
+        font-family: $mainFont;
+        margin: 0;
+    }
+}
+
+.active {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    cursor: pointer;
+    color: $white;
+    margin-bottom: 10px;
+    background-color: $buttonActiveColor;
+    border-radius: 5px;
+    border: none;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 20px;
+    }
+
+    .image {
+        padding-left: 5px;
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    .title {
+        font-size: 16px;
+        color: $white;
+        font-family: $mainFont;
+        margin: 0;
+    }
+}

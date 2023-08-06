@@ -1,0 +1,118 @@
+@import "../../../../styles/const.scss";
+
+.container {
+    width: 500px;
+    background-color: $white1;
+    border-radius: 5px;
+    max-height: 700px;
+
+    @media screen and (max-width: 580px) {
+        width: 380px;
+        padding: 10px;
+
+        @media screen and (max-width: 380px) {
+            width: 330px;
+            padding: 10px;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        .button {
+            width: 150px;
+            height: 25px;
+            border: 2px solid $black;
+            border-radius: 5px;
+            background-color: transparent;
+            padding: 5px;
+            cursor: pointer;
+
+            &:active {
+                border: 2px solid #abc451;
+                box-shadow: 0 0 0 0.1rem #abc451;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .formWrapper {
+                display: flex;
+                row-gap: 20px;
+                flex-direction: column;
+                padding: 20px 0;
+
+                .inputWrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .spanError {
+                    font-size: 16px;
+                    color: red;
+                    font-family: $mainFont;
+                }
+
+                .error {
+                    width: 250px;
+                    height: 20px;
+                    padding: 5px;
+                    border: 2px solid red;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 5px;
+
+                    &:focus {
+                        transition: linear 0.3s;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.1rem red;
+                    }
+                }
+
+                .inputTitle {
+                    margin: 0;
+                    padding-bottom: 10px;
+                }
+
+                .input {
+                    width: 250px;
+                    height: 20px;
+                    padding: 5px;
+                    border: 2px solid $black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 5px;
+
+                    &:focus {
+                        transition: linear 0.3s;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.1rem black;
+                    }
+                }
+            }
+        }
+
+        .infoWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                margin: 0;
+                font-size: 18px;
+                font-family: $mainFont;
+            }
+
+            .img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.container {
+    max-width: 640px;
+    padding: 10px;
+
+    .wrapper {
+        display: flex;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 10px;
+        gap: 10px;
+
+        &:hover {
+            transition: linear 0.3s;
+            box-shadow: inset 0px 0px 15px rgba(0,0,0,0.7);
+        }
+        
+
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .textWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin: 0;
+            }
+
+            .desc {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}

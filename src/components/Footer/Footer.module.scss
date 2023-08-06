@@ -1,0 +1,31 @@
+@import "../../styles/const.scss";
+
+.container {
+    width: 100%;
+
+    .wrapper {
+        padding: 20px;
+
+        .textWrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .title {
+                font-size: 30px;
+                background: -webkit-linear-gradient(#4F4F50, #313131);
+                background-clip: none;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: $mainFont;
+                margin: 0;
+            }
+
+            .span {
+                font-size: 17px;
+                font-family: $mainFont;
+                color: $white1;
+            }
+        }
+    }
+}

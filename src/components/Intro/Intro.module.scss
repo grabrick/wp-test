@@ -1,0 +1,197 @@
+@import "../../styles/const.scss";
+
+.container {
+    width: 100%;
+
+    .wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 100px;
+
+            &:nth-child(2) {
+                @media screen and (max-width: 1440px) { 
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width: 425px) {
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                &:nth-child(1) {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            .img {
+                max-width: 500px;
+                max-height: 500px;
+
+                @media screen and (max-width: 1024px) {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+            }
+
+            .elementWrapper {
+                display: flex;
+                flex-direction: column;
+
+                .cardWrapper {
+                    margin-bottom: 20px;
+                    display: flex;
+
+                    @media screen and (max-width: 768px) {
+                        align-items: center;
+                    }
+                    
+                    @media screen and (max-width: 425px) {
+                        margin-bottom: 40px;
+
+                        &:nth-child(1) {
+                            margin-top: 30px;
+                        }
+
+                        @media screen and (max-width: 380px) {
+                            display: flex;
+                            flex-direction: column;
+
+                            &:nth-child(2) {
+                                flex-direction: column-reverse;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 410px) {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+
+                        &:nth-child(2) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+
+                    .cardImg {
+                        @media screen and (max-width: 1024px) {
+                            max-width: 250px;
+                            max-height: 220px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            max-width: 170px;
+                            max-height: 150px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin: 0;
+                    }
+
+                    .cardText {
+                        font-family: $mainFont;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $white;
+                        max-width: 440px;
+                        padding: 0 0 0 20px;
+                        margin: 0;
+
+                        &:nth-child(1) {
+                            padding: 0 20px 0 0;
+                        }
+
+                        @media screen and (max-width: 1024px) {
+                            max-width: 300px;
+                            font-size: 16px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            max-width: 250px;
+                            font-size: 14px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            font-size: 14px;
+                        }
+
+                        @media screen and (max-width: 410px) {
+                            padding: 0;
+                            text-align: center;
+
+                            &:nth-child(1) {
+                                padding: 0;
+                            }
+                        }
+
+                        @media screen and (max-width: 380px) {
+                            max-width: fit-content;
+                            margin-top: 20px;
+                            text-align: center;
+                            font-size: 14px;
+                            
+                            &:nth-child(1) {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .infoWrapper {
+            // max-width: 450px;
+
+            @media screen and (max-width: 425px) {
+                text-align: center;
+            }
+
+            .title {
+                font-family: $mainFont;
+                color: $white;
+                margin: 0;
+                max-width: 800px;
+                font-size: 70px;
+
+                @media screen and (max-width: 1440px) { 
+                    font-size: 50px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 50px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 30px;
+                }
+            }
+
+            .text {
+                font-family: $mainFont;
+                color: $white2;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 600;
+                max-width: 500px;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 400px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

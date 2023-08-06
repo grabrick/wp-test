@@ -1,0 +1,17 @@
+.server-error-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    padding-top: 50px;
+    width: 100%;
+    z-index: -1;
+
+    @media screen and (max-width: 444px) {
+        padding-bottom: 0;
+        top: 50px;
+        z-index: 0;
+
+    }
+}
