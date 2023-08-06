@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/wp-test/static/css/main.34f6e3ea.css",
+    "main.js": "/wp-test/static/js/main.dcec4ad7.js",
+    "static/media/catalog.svg": "/wp-test/static/media/catalog.151a33f6240bf27edaf805b21ad63304.svg",
+    "static/media/bigImg.svg": "/wp-test/static/media/bigImg.46a0d2fa8f83478d922849b4d78545fb.svg",
+    "static/media/bigimg2.svg": "/wp-test/static/media/bigimg2.fd565b79fbd0dc1c8c1a20fb6f74bf69.svg",
+    "static/media/search.svg": "/wp-test/static/media/search.2ff1c97a95318e6ab4484ccb79067e1f.svg",
+    "index.html": "/wp-test/index.html",
+    "static/media/image-lineWhite.svg": "/wp-test/static/media/image-lineWhite.2bea0b095ba4d1365b2b468c4ea92e8f.svg",
+    "static/media/image-line.svg": "/wp-test/static/media/image-line.ce14f5a09aaf78b44464169d4200f05c.svg",
+    "static/media/search-line.svg": "/wp-test/static/media/search-line.c915c5ff09df4e5e7f6b0576a839ee66.svg",
+    "main.34f6e3ea.css.map": "/wp-test/static/css/main.34f6e3ea.css.map",
+    "main.dcec4ad7.js.map": "/wp-test/static/js/main.dcec4ad7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34f6e3ea.css",
+    "static/js/main.dcec4ad7.js"
+  ]
+}
